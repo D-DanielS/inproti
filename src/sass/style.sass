@@ -126,6 +126,87 @@ $title__c: #182B34
 
 
 
+.semilleros
+    @include url-images(bg)
+    @include bgi()
+
+    padding-bottom: 2em
+    position: relative
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        position: absolute
+        background: rgba($negro,.65)
+        
+
+
+    &__title 
+        padding: 2em 0
+        position: relative
+        >h2 
+            text-align: center
+            font-family: $font-osw
+            font-size: responsive 30px 28px
+            color: $blanco
+            letter-spacing: 1px
+
+    &__contenedor
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+        margin: 0 auto
+        position: relative
+        .semilleros__items
+            width: 40%
+            margin: 1em
+
+            >figure 
+                width: 120px
+                height: 120px
+                margin: 0 auto
+                box-shadow: 1px 4px 10px rgba($negro, .8)
+                overflow: hidden
+                border-radius: 50%
+                border: 5px solid #eeeeee
+                >img                
+                    width: 100%
+                    max-width: 100%
+                    
+            >figcaption
+                font-family: $font-ops
+                text-align: center
+                color: $blanco
+                font-size: responsive 17px 18px
+                margin-top: 1em
+                font-weight: bold
+
+
+
+
+@include mediaMin(1024)
+    .semilleros
+        height: 500px
+        background-attachment: fixed
+        &__title
+            >h2
+                padding-top: 2em
+        &__contenedor
+            margin-top: 2em
+            .semilleros__items
+                width: 20% !important
+
+
+
+
+
+
+
+
+
 
 
 
