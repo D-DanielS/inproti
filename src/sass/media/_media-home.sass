@@ -1,0 +1,70 @@
+@include mediaMin(480)
+    .courses
+
+        &__container
+            width: 80%
+            margin: 0 auto
+            @include mainDistribute  
+
+@include mediaMin(640)
+    
+    .caracteristicas
+        display:  flex
+        &__items
+            width: 33.333333%
+
+    .estudiantes
+        &__opinion
+            width: 80%
+            margin: 0 auto
+
+@include mediaMin(768)
+    .estudiantes
+        
+        &__opinion
+            width: 100%
+            @include mainCenter
+
+            .item__opinion
+                width: 33.333%
+                margin: 0 auto
+
+
+@include mediaMin(1024)
+    
+    .header__contenedor
+        .form__home 
+            display: block
+
+
+    .caracteristicas
+        &__items
+            padding: 2em 0.5em
+    .courses
+        &__container
+            width: 68%
+
+    .estudiantes
+        padding: 1em 0
+        padding-bottom: 2em
+        &__opinion
+            width: 95%
+
+
+@include mediaMin(1300)
+    
+    .courses
+        padding: 2em 0
+    
+    .estudiantes
+        &__opinion
+            width: 80%
+
+@include mediaMin(1400)
+    .header__contenedor 
+        .form__home 
+            top: 13%
+            
+    .estudiantes
+        padding: 1em 0
+        padding-bottom: 2.5em

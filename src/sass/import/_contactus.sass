@@ -1,0 +1,273 @@
+.contacto
+    &__form
+        // border: 1px solid red
+        width: 90%
+        margin: 2em auto
+        background: $blanco-fa
+        border: 1px solid $gris_c
+        &__contenedor
+            // border: 1px solid red
+            @include mainDistribute
+            padding: 0 .7em
+            justify-content: center
+            .title__contacto
+                // border: 1px solid red
+                width: 78%
+                padding: 1.5em 0
+                >h2
+                    font-family: $font-osw
+                    letter-spacing: 1px
+                    font-size: responsive 21px 25px
+                    text-transform: initial
+                    font-weight: normal
+                    color: $azul
+
+            .image__contacto
+                width: 20%
+                >figure
+                    width: 55px
+                    margin: 0 auto
+
+
+
+        >form
+            // border: 2px solid blue
+            .div__info__contacto
+                // border: 1px solid red
+                // @include mainCenter
+                &__item
+                    display: flex
+                    // bordeR: 1px solid red
+                    width: 90%
+                    margin: 1em auto
+                    >label
+
+                        text-transform: Initial
+                        color: $gris_oscuro
+                        display: flex
+                        flex-direction: column
+                        width: 100%
+                        >input
+                            // width: 90%
+                            // margin: 0 auto
+                            border: none
+                            // border: 1px solid red
+                            background: none
+                            border-bottom: 1px solid $gris_c
+                            line-height: 2
+                            padding-top: .5em
+                            padding-left: .5em
+                            font-family: $font-ops
+
+                            &:active,
+                            &:focus
+                                outline: none
+
+                            &:active,
+                            &:focus
+                                border-bottom : 1px solid $azul-contacto
+                    &__textarea
+                        width: 90%
+                        margin: 0 auto
+                        >label
+                            text-transform: Initial
+                            color: $gris_oscuro
+                            display: flex
+                            flex-direction: column
+                            width: 100%
+                            >i
+                                color: $gris_oscuro
+                                font-size: 1.1em
+                                padding-right: .5em
+
+                            >textarea
+                                border: none
+                                background: none
+                                border-bottom: 1px solid $gris_c
+                                padding-left: .5em
+                                padding-top: .4em
+                                font-family: $font-ops
+                                width: 100%
+                                margin: 0 auto
+                                max-width: 100%
+
+
+                                &:active,
+                                &:focus
+                                    outline: none
+
+                                &:active,
+                                &:focus
+                                    border-bottom : 1px solid $azul-contacto
+
+
+                    &__send
+                        margin-top: 1.2em
+                        >button
+                            border: none
+                            background: $azul_claro
+                            line-height: 3
+                            width: 100%
+                            >i
+                                color: $blanco
+                                font-size: 1.4em
+
+                            &:hover
+                                text-decoration : none
+
+                            &:active
+                                transform : scale(.97)
+                                outline: none !important
+                            &:focus 
+                                outline: none
+
+                    // button
+
+                    &:last-child
+                        display: inline
+
+                    &--select
+                        // border: 1px solid red
+                        display: flex
+                        flex-direction: column
+                        >label
+                            margin-bottom: -.3em
+                        >select
+                            margin: 1em 0
+                            background: none 
+                            border: none
+                            border-bottom: 1px solid $gris_c
+                            text-transform: capitalize
+                            padding-bottom: .5em
+                            &:active,
+                            &:focus
+                                outline: none
+
+                            &:active,
+                            &:focus
+                                border-bottom : 1px solid $azul-contacto
+
+
+
+        &__container
+            background: $azul-contacto
+            background-image: url('../images/bgcontacto.png')
+            @include bgi(cover , bottom right)
+            width: 90%
+            margin: 0 auto
+            margin-bottom: 2em
+            padding: 2em 0
+
+            .contacto
+                &__title
+                    padding-bottom: 1em
+                    >h2
+                        font-family: $font-osw
+                        letter-spacing: 1px
+                        text-align: center
+                        font-size: responsive 21px 19px
+                        text-transform: initial
+                        font-weight: normal
+                        color: $blanco
+
+                &__description
+                    padding: 1em
+                    &__item
+                        @include mainCenter
+                        justify-content: flex-start
+                        flex-wrap: nowrap
+                        margin: 2em auto
+                        padding-left: .5em
+                        >i,
+                        >span
+                            color: $color-letra
+                        >span
+                            line-height: 2
+                        >i
+                            padding-right: .5em
+                            font-size: 1.4em
+
+
+                        .fa-mobile
+                            font-size: 1.8em
+
+                        .span
+                            display: flex
+                            flex-direction: column
+                            >span
+                                line-height: 1.5
+                                text-transform: capitalize
+                                color: $color-letra
+                                font-size: responsive 15spx 15px
+
+
+
+                &__social
+                    @include mainCenter
+                    justify-content: flex-start
+                    padding: 1em 0
+                    width: 90%
+                    margin: 0 auto
+                    &__items
+                        width: 20%
+                        text-align: center
+                        >i
+                            color: $color-letra
+                            font-size: 1.5em
+
+
+
+
+
+// .contacto
+//     &__form
+//         &__contenedor
+//             .title__contacto
+//                 >h2
+
+
+//             .image__contacto
+//                 display: none
+
+
+
+//         >form
+//             .div__info__contacto
+//                 &__item
+//                     >label
+//                         >input
+
+//                     &__textarea
+//                         >label
+//                             >i
+//                             >textarea
+
+//                     &__send
+//                         >button
+//                             >i
+
+//                 &--select
+//                     >select
+//                         >option
+
+
+            .contacto__form__contenedor
+                .contacto
+                    &__title
+                        >h2
+
+                    &__description
+
+                        &__item
+                            >i
+                                >span
+
+
+                            .span
+                                >span
+
+
+
+                    &__social
+                        &__items
+                            >i

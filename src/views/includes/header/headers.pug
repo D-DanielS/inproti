@@ -1,0 +1,47 @@
+mixin headerForm(srcWeb ,href, name)
+    .headers__containerForm
+        figure                                 
+            img(src=srcWeb, alt="images" )
+        
+        .button 
+            a(href=href)
+                button()= name 
+                
+
+mixin header(src)
+    .headers__container
+        figure
+            img(src=src, alt="images")
+
+
+
+mixin headerContacto(src, texto)
+    .headers__container.headers__container--contactus
+        figure
+            img(src=src, alt="images")
+
+        
+        .contactus__h2__content
+            h2()= texto
+
+
+        
+
+
+mixin headerBlog(src,link ,texto)
+    .headers__container.headers__container--blog
+        figure
+            img(src=src, alt="images")
+
+        .blog__content__header
+            .blog__content__header__item
+                a(href=link).blog__content__header__item__link
+
+                    .blog__info__header 
+                        span instituto yes
+                        span diciembre 24 2016
+
+                    .blog__title__header
+                        h2()= texto          
+                        
+

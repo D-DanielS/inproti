@@ -1,0 +1,89 @@
+mixin nav(active)
+    
+    .nav
+        .nav__movil
+            a(href="index.html")
+                figure
+                    img(src="../images/logos.png", alt="image")
+            i.fa.fa-bars.fa-2x#iconMenu.iconMenu
+
+
+        ul.nav__web#menu
+            if(active === 'inicio')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") inicio
+            else 
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") inicio
+
+
+            if(active === 'cursos')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") Nosotros
+            else 
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") Nosotros
+
+
+            if(active === 'servicios')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") Objetivos
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") Objetivos
+            
+            if(active === 'placement')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") Semilleros
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") Semilleros
+
+
+            if(active === 'the-yes-factor')
+                li.nav__web__items
+                    a.nav__web__items__link.select-active(href="#") Docentes
+            else
+                li.nav__web__items
+                    a.nav__web__items__link(href="#") Docentes
+            
+
+
+            
+                       
+
+
+
+mixin menu()
+
+    .nav
+        .nav__movil
+            a(href="index.html")
+                figure
+                    img(src="./images/avatar.png", alt="image")
+            i.fa.fa-bars.fa-2x#iconMenu.iconMenu
+ 
+ 
+
+        ul.nav__web#menu
+            li.nav__web__items
+                a.nav__web__items__link(href="#") inicio
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") participantes
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") como funciona
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") invitados
+
+            
+            li.nav__web__items
+                a.nav__web__items__link(href="#") inscripciones
+            
+            //- li.nav__web__items
+            //-     a.nav__web__items__link(href="contacto.html") contáctenos
+            
+
+            

@@ -1,0 +1,214 @@
+
+@import "components/reset"
+@import "components/base"
+@import "components/variables"
+@import "components/helpers"
+@import "components/flexbox"
+@import "components/media-queries"
+@import "components/video"
+@import "components/buttons"
+
+@import "mixins/mixins"
+$title__c: #182B34
+
+@import "import/nav"
+@import "import/header-home"
+@import "import/footer"
+@import "import/caracteristicas-home"
+
+
+@import "import/headers"
+
+@import "import/formModal"
+
+
+@import "import/contactus"
+
+
+
+
+
+@import "media/media-nav"
+@import "media/media-home"
+@import "media/media-formModal"
+
+@import "media/media-contactus"
+
+
+
+@import "media/media-footer"
+ 
+
+
+
+
+.franja
+    background: #1c2b33
+    padding: 1em 0
+    >h2 
+        color: $blanco
+        font-size: responsive 16px 17px
+        text-align: center
+        line-height: 2
+        text-transform: uppercase
+        font-family:  $font-ops
+
+
+
+.bgmv
+    background:  linear-gradient(to bottom, rgba(255,249,247,1) 0%, rgba(255,251,250,1) 35%, rgba(255,255,254,1) 100%)
+    @include mediaMin(1024)
+        padding: 2em 0
+.mision
+    &__container
+
+    &__items
+        width: 90%
+        margin: 0 auto
+        >figure 
+            width: 250px
+            margin: 0 auto
+            img
+                width: 100%
+                max-width: 100%
+
+
+        &__mision
+            padding-bottom: 10px
+        &__vision
+            margin-bottom: 30px
+        &__mision,
+        &__vision
+            >h2 
+                font-family: $font-osw
+                font-size: responsive 30px 28px
+                color: $title__c
+                text-align: center
+                margin-bottom: 10px
+
+            >p 
+                color: $title__c
+                font-size: responsive 15px 16px
+                font-family: $font-ops
+                padding-bottom: 10px
+
+
+
+@include mediaMin(767)
+    .mision
+        &__container
+            display: flex
+            align-items: stretch
+            justify-content: center
+            padding-top: 20px
+        &__items
+            width: 65%
+            &:first-child
+                width: 30%
+                >figure 
+                    width: 100%
+                    margin: 0 auto
+        
+
+
+@include mediaMin(767)
+    .mision
+        &__container
+            width: 80%
+            margin: 0 auto
+        &__items
+            &:first-child
+                >figure 
+                    width: 80%
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+#modalindex
+    position: fixed
+    z-index:9999999 !important
+    top: 0%
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: none !important
+    background: rgba($negro,.60)
+    @include mediaMax(1023)
+        display: none
+    @include mediaMin(1024)
+        display: block
+
+    #ventanaindex
+        // background-image: url('../images/modal-promo.jpg')
+        background-size: cover 
+        background-repeat: no-repeat
+        background-position: center center
+        width: 80%     
+        // height: 500px
+        // width: auto
+        // max-width: 100%
+        // height: 630px
+        // height: 
+        margin: 11% auto
+        // border: 5px solid $blanco_fa
+        // box-shadow: 0 0 40px rgba($negro,.6)
+        animation: animation 5s
+        position: relative
+        // @include mediaMin(1200)
+        //     max-width: 70%
+
+        figure
+            background: $blanco_fa
+            width: 850px
+            height: auto
+            margin: 0 auto
+            
+            box-shadow: 0 0 40px rgba($negro,.6)
+            
+            border: 5px solid $blanco_fa
+            
+            img 
+                width: 100%        
+                max-width: 100%
+
+
+        .cerrarindex
+            position: absolute
+            top: -10%
+            right: 0%
+            #cerrarindex
+                &:before
+                    content: "cerrar"
+                    color: $blanco
+                    padding-right: .5em
+                    text-transform: uppercase
+                    letter-spacing: 1px
+                >i 
+                    color: $blanco
+                    font-size: 2em
+                    
+
+
+
+.none
+    display: none 
+
+@keyframes animation
+
+    0%
+        top: -1000px
+    
+
+    30%
+        top: 0
+    

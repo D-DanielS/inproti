@@ -1,0 +1,106 @@
+@include mediaMin(640)
+    .contacto
+        &__container
+            // width: 80%
+            // margin: 0 auto
+
+        &__form
+            >form
+                .div__info__contacto
+                    display: flex
+                    flex-wrap: wrap
+                    &__item
+                        width: 44%
+
+                        &:last-child
+                            display: flex
+                            align-items: flex-end
+                            justify-content: center
+                            // justify-content: flex-start
+                            width: 95%
+                            .div__info__contacto__item__textarea
+                                width: 65%
+                                // border: 1px solid green
+
+                            .div__info__contacto__item__send
+                                width: 30%
+                                text-align: center
+                                >button
+                                    width: 80px
+                                    height: 80px
+                                    border-radius: 50%
+
+                                    >i
+                                        font-size: 2.5em
+                                        padding-right: .2em
+                                        padding-top: .3em
+
+
+
+@include mediaMin(768)
+    .contacto
+        &__container
+            width: 85%
+            margin: 2em auto
+
+@include mediaMin(1024)
+    .contacto
+        &__container
+            width: 85%
+            display: flex
+            justify-content: center
+
+
+        &__form
+            width: 60%
+            margin: 2em 0
+            >form
+                .div__info__contacto
+                    display: flex
+                    flex-wrap: wrap
+                    &__item
+                        width: 44%
+                        margin: .8em auto
+
+                        &:last-child
+                            width: 95%
+                            .div__info__contacto__item__textarea
+                                width: 79%
+                                
+                                overflow: hidden
+                                >label
+                                    >textarea
+                                        max-height: 300px
+
+
+                            .div__info__contacto__item__send
+                                width: 20%
+                                text-align: center
+                                >button
+                                    width: 80px
+                                    height: 80px
+                                    border-radius: 50%
+
+            &__container
+                width: 30%
+                margin: 0
+                margin-top: 2em
+                margin-bottom: 2em
+                padding-top: 4em
+                padding-bottom: 4em
+
+                .contacto
+
+                    &__title
+                        padding-top: 0
+                    &__description
+                        &__item
+                            margin: 2em 0
+
+
+@include mediaMin(1400)
+    .contacto
+        &__container
+            margin-top: 5em
+            width: 70%
+            

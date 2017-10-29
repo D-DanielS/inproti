@@ -1,0 +1,44 @@
+@include mediaMin(768) 
+    .footer
+        @include mainDistribute
+        flex-wrap: nowrap
+        padding: 1.5em 0  
+        &__description
+            padding: 1em 1.5em
+            >h2 
+                margin-bottom: 20px
+                font-size:  responsive 18px 20px
+                text-align: center
+            >p 
+                width: 90%
+                // border-right: 1px solid $blanco
+                // padding-right: 2em
+            
+        .footer__contenedor
+            padding: 1em 0 
+
+
+@include mediaMin(1024) 
+    .footer
+        width: 90% 
+        margin: 0 auto
+        padding: 2.5em
+        &__description
+            // padding: 1.4em 2em
+                
+        
+        &__contenedor
+            .footer__socialmedia
+                justify-content: center
+            
+                
+@include mediaMin(1400) 
+    .footer
+        width: 80% 
+        margin: 0 auto
+        padding: 5em 0
+
+        &__description
+            >h2 
+                text-align: left
+

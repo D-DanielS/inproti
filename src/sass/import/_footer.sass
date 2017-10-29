@@ -1,0 +1,104 @@
+footer 
+    // background: #292929
+    background: #333
+    @include url-images(bglogo, png)
+    background-size: cover !important
+    background-position: top center
+    background-repeat: no-repeat !important
+    
+
+.footer
+    
+    &__description
+        width: 90% 
+        margin: 0 auto
+        padding: 2em 0
+        >h2 
+            color: $blanco
+        >p 
+            color: $blanco
+            text-align: left
+            font-size: responsive 15px 17px
+            font-family: $font-osw
+            font-weight: 300
+            letter-spacing: 1px
+    
+    &__contenedor
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 90%
+        margin: 0 auto
+        .footer__link
+            width: 45%
+            >ul 
+                >li 
+                    list-style: none
+                    >a 
+                        color: $blanco
+                        text-transform: capitalize
+                        line-height: 2
+                        font-size: responsive 15px 17px
+                        font-family: $font-osw
+                        font-weight: 300
+                        letter-spacing: 1px
+             
+
+
+        .footer__socialmedia
+            width: 45%
+            
+            &__items
+
+
+                @include mainCenter
+                justify-content: flex-start
+                text-decoration: none
+  
+                >i 
+                    line-height: 2
+                    color: $blanco
+
+                
+                .fa-facebook,
+                .fa-instagram,
+                .fa-youtube-play
+                    font-size: 1.1em
+                
+                >p 
+                    color: $blanco
+                    text-transform: capitalize
+                    padding-left: .5em
+                    font-size: responsive 15px 17px
+                    font-family: $font-osw
+                    font-weight: 300
+                    letter-spacing: 1px
+
+
+    &__derechos
+        padding: 1em 0
+        border-top:  1px solid $blanco
+        margin-top: 1em
+        @include mediaMin(769)
+            display: flex 
+            justify-content: space-around
+            >p 
+                width: 60% !important
+        >p 
+            color: $blanco
+            text-transform: initial
+            text-align: center
+            font-size: responsive 15px 17px
+            font-family: $font-osw
+            font-weight: 300
+            letter-spacing: 1px
+
+
+.meps
+    text-decoration: none !important
+    color: #ffffff
+    &:hover
+        color: #E92C68
+        text-decoration: underline !important
+
+    

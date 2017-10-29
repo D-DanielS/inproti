@@ -1,0 +1,110 @@
+.header__contenedor 
+    margin-top: 67px
+    position: relative
+    overflow: hidden
+
+    height: 550px
+    @media screen and(max-width: 600px)
+        height: 200px
+
+    @media screen and(min-width: 601px)
+        height: 400px          
+    @media screen and(min-width: 1025px)
+        height: 500px 
+    @media screen and(min-width: 1400px)
+        max-height: 600px 
+    >figure
+        width: 100vw    
+
+        >img 
+            @include width
+            height: 550px
+            @media screen and(max-width: 600px)
+                height: 200px
+            
+            @media screen and(min-width: 601px)
+                height: 400px   
+
+            @media screen and(min-width: 1025px)
+                height: 500px 
+
+            @media screen and(min-width: 1400px)
+                max-height: 600px   
+    .form__home
+        display: none
+        border: 1px solid $gris_c
+        border-radius: 3px
+        width: 350px
+        background: #fafafa
+
+        position: absolute
+        top: 10%
+        right: 3%
+
+        >h2 
+            text-transform: initial
+            font-family: $font-osw
+            font-weight: normal
+            font-size: responsive 20px 22px
+            text-align: center
+            padding-top: 1em
+            color: $gris_oscuro
+            letter-spacing: .3px
+        form 
+            padding: 1em
+            
+            .divform
+                display: flex
+                flex-wrap: wrap
+                flex-direction: column
+                padding: .5em 0
+
+                &:last-child 
+                    width: 150px
+                    margin: 0 auto
+                    margin-top: .5em
+                    
+
+                >label 
+                    text-align: left
+                    color: $gris_oscuro
+                    font-family: $font-osw
+                    font-weight: 300
+                    letter-spacing: 1px
+                    font-size: responsive 12px 13px
+                    text-transform: uppercase
+                >input 
+                    border: none
+                    line-height: 2
+                    padding-left: .5em
+                    border: 1px solid $gris_c 
+                    font-family: $font-ops
+                    color: $gris_oscuro
+                    border-radius: 3px 
+                    
+                    &:focus
+                        outline-color: $azul_claro
+
+                >select
+                    height: 30px
+                    border: 1px solid $gris_c 
+                    font-family: $font-ops
+                    text-transform: capitalize
+                    color: $gris_oscuro
+                    border-radius: 3px
+
+                >button 
+                    background: $naranja 
+                    border: none
+                    line-height: 2
+                    border-bottom: 3px solid darken($naranja, 10)
+                    color: $blanco 
+                    font-size: 1em
+                    font-family: $font-osw
+                    letter-spacing: 1px
+                    font-weight: 300
+
+
+
+
+            

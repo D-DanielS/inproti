@@ -1,0 +1,89 @@
+
+.contacto__container
+    .contacto__form
+        .contacto__form__contenedor
+            .title__contacto
+                h2.title__contacto__h2 Déjenos un mensaje...
+
+            .image__contacto 
+                figure
+                    img(src="./images/email.png", alt="image")
+
+        form
+            .div__info__contacto
+                .div__info__contacto__item
+                    label Nombres
+                        input(type="text" placeholder="Juan José" autofocus)#nombre
+                
+                .div__info__contacto__item
+                    label Apellidos
+                        input(type="text" placeholder="Lizcano Tovar")#apellido
+
+                .div__info__contacto__item
+                    label Correo Electrónico
+                        input(type="text" placeholder="Juan@Example.com")#email
+
+                .div__info__contacto__item
+                    label Teléfono
+                        input(type="text" placeholder="(300)455 5555" maxlength="10")#telefono
+
+
+                .div__info__contacto__item
+                    label Ciudad
+                        input(type="text" placeholder="Neiva")#ciudad
+
+                .div__info__contacto__item.div__info__contacto__item--select
+                    label ¿Cómo se enteró del Instituto Yes?
+                    select#comoseentero
+                        option(value="facebook") facebook
+                        option(value="instagram") instagram
+                        option(value="youtube") youtube
+                        option(value="google") google
+                        option(value="yahoo") yahoo
+                        option(value="amigos") amigos
+                        option(value="prensa") prensa
+                        option(value="radio") radio
+
+
+                .div__info__contacto__item 
+                    .div__info__contacto__item__textarea
+                        label Mensaje
+                            textarea(name="", cols="30", rows="10" placeholder="Your message...")#mensaje
+            
+                    .div__info__contacto__item__send
+                        button#buttonContacto
+                            i.fa.fa-paper-plane
+
+
+
+
+    .contacto__form__container
+        .contacto__title
+            h2 Información de contacto 
+        
+        .contacto__description
+            .contacto__description__item
+                i.fa.fa-location-arrow
+                .span
+                    span carrera 7 cll 17a esquina quirinal
+                    span neiva - huila, colombia 
+
+            .contacto__description__item
+                i.fa.fa-mobile
+                .span
+                    span +(578) 8723131
+                    span +(578) 8756062
+            .contacto__description__item
+
+                i.fa.fa-envelope-o         
+                span contactenos@yes.edu.co
+
+        
+
+        .contacto__social
+            a(href="https://www.instagram.com/instituto_yes/").contacto__social__items
+                i.fa.fa-instagram
+            a(href="https://www.facebook.com/institutoyes/").contacto__social__items
+                i.fa.fa-facebook
+            a(href="https://www.youtube.com/channel/UCfvzDmamWvhdZubng7YRzfQ").contacto__social__items
+                i.fa.fa-youtube-play

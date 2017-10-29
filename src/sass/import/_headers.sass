@@ -1,0 +1,31 @@
+%mediaImage
+    @include mediaMin(1024)
+        height: 338px
+    @include mediaMin(1124)
+        height: 400px
+    @include mediaMin(1250)
+        height: 450px
+    @include mediaMin(1300)
+        height: 460px
+    @include mediaMin(1400)
+        height: 500px
+
+.headers
+    
+
+    &__container
+        margin-top: 4.2em 
+        @extend %mediaImage
+        overflow: hidden
+        height: auto
+        max-height: 600px
+        >figure
+            width: 100%
+            >img 
+                width: 100%
+                max-width: 100%
+    
+
+
+
+

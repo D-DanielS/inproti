@@ -1,0 +1,56 @@
+.caracteristicas
+    background: #fafafa
+    padding: 1.5em 
+
+    &__title
+        background: #fafafa
+        padding: 1.5em 0
+        >h2 
+            font-size: responsive 30px 30px
+            font-family: $font-osw
+            text-align: center
+            width: 90%
+            margin: 0 auto
+            color: $title__c
+            margin-bottom: 1em
+            margin-top: 1em
+        >p 
+            font-family: $font-ops
+            font-size: responsive 16px 17px
+            color: $gris_oscuro
+            width: 90%
+            margin: 0 auto
+            text-align: center
+
+            @include mediaMin(768)
+                width: 80%
+            @include mediaMin(1024)
+                width: 70%
+    &__items
+        padding: 1em 0
+        &:nth-child(2)
+            >figure 
+                width: 115px
+        
+        >figure
+            width: 120px
+            min-height: 140px
+            margin: 0 auto 
+            margin-bottom: 10px
+            @include mainCenter
+            >img 
+                @include width
+        >figcaption 
+            text-transform: uppercase
+            text-align: center
+            padding: .8em 0 
+            font-family: $font-osw 
+            font-size: responsive 17px 21px
+            color: $gris_O
+        
+        >p
+            color: $gris_oscuro
+            width: 90%
+            margin: 0 auto
+            text-align: center
+            font-size: responsive 16px 17px

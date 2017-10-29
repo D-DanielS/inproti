@@ -1,0 +1,85 @@
+nav
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    
+    box-shadow: 0 0 10px rgba($negro, .12)
+
+.ocultarMenu
+    display: none 
+
+.menuActive
+    display: block
+
+
+.menu-show
+    // left: 0 
+
+    display: flex !important
+    flex-direction: column
+
+    
+.nav
+    background: $blanco
+    &__movil 
+        @include mainJustify
+        padding: .5em 1em
+        >a 
+            >figure
+                width: 50px
+                height: 50px
+
+                >img 
+                    @include width
+        .iconMenu
+            color: #1c2c33 
+            cursor: pointer
+        
+
+
+    &__web
+        display: none
+        &__items
+            @include mainCenter
+            flex: auto
+            background: $blanco
+            text-align: center
+            margin: 0 .1em
+            border-top: 1px solid $gris_D
+            &:hover
+                transition: .3s all
+                box-shadow: 3000px 0 $naranja inset
+
+                
+                    
+               
+
+            &__link
+                // display: block
+                width: 100%
+                text-transform: uppercase
+                color: $azul
+                line-height: 4
+                text-decoration: none
+                font-size: responsive 16px 17px
+                font-family: $font-osw
+                font-weight: 300
+                letter-spacing: 1px
+                border-bottom: 3px solid transparent
+                
+                &:hover
+                    color: $blanco
+                    text-decoration: none
+                    transition: all .3s
+                    border-bottom: 3px solid darken($naranja, 10)
+
+
+
+.select-active
+    box-shadow: 3000px 0 $naranja inset
+    color: $blanco
+    border-bottom: 2px solid darken($naranja, 10)
+    @include mediaMin(1024)
+        border-radius: 30px

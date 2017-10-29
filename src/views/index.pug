@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+
+        title Improti
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css")
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Oswald:300,400', rel='stylesheet')
+        link(rel="stylesheet", href="./css/style.css")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+        meta(property="og:url", content= "https://www.yes.edu.co/")
+        meta(property="og:title", content="Viernes a precios de locura")
+        meta(property="og:description", content="Costo del semestre $290.000 con material incluido.")
+        meta(property="og:image:type" content="image/jpg")
+        //- meta(property="og:image" content="https://www.yes.edu.co/images/sliderp/vl.jpg")
+        meta(property="og:image" content="https://www.yes.edu.co/images/sliderp/og.jpg")
+        
+        
+
+
+
+    body
+        nav
+            include ./includes/nav/nav.pug
+            +nav('inicio')
+            
+        header 
+            include ./includes/header/headerhome.pug
+
+        section 
+            include ./includes/franja/franja.pug
+
+        section.bgmv
+            include ./includes/mision/mision.pug
+
+
+        section
+            include ./includes/home/caracteristicas.pug
+
+
+
+
+
+            
+        
+        footer
+            include ./includes/footer/footer.pug
+            
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.min.js")
+        //- script(src="./js/modal.js")        
+        script(src="./js/nav.js")
+        //- script(src="./js/homeform.js")
+        script(src="./js/scripts.js")
+        //- script. 
+            /*slide header */
+            var i = 0;
+            if( $(window).width() >= 1024){
+            setInterval(function(){
+            if(i === 0){
+            $("#imgHeader").attr("src","./images/sliderp/promo.jpg");
+            i = 1;
+            }else if(i === 1) {
+            $("#imgHeader").attr("src","./images/sliderp/banner_servicios.jpg");
+            i = 2;
+            }else if(i === 2){
+            $("#imgHeader").attr("src","./images/sliderp/banner_onlinelesssos-1.jpg");
+            i = 3;
+            }else if(i === 3){
+            $("#imgHeader").attr("src","./images/sliderp/frances.jpg");
+            i = 4;
+            }else if(i === 4){
+            $("#imgHeader").attr("src","./images/sliderp/vl.jpg");
+            i = 0;
+            }
+            }, 5000);
+            }
+
+

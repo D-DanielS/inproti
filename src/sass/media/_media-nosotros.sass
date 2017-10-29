@@ -1,0 +1,184 @@
+@include mediaMin(640)
+
+    .nosotros 
+        &__wwu
+            &__title
+                >h2 
+            &__subtitle
+                >h2 
+            
+            &__description
+
+            &__content
+                @include mainCenter
+                align-items: flex-start
+                &__items 
+                    width: 40%
+                    &:first-child
+                        >figure 
+                            width: 90px
+
+
+
+@include mediaMin(768)
+    .nosotros 
+        &__acerca
+            width: 80%
+            &__content
+
+                &__title
+                    >h2 
+                &__description
+                
+            &__images 
+                >figure 
+            
+
+
+
+        &__metodo
+            width: 80%
+            &__content
+                &__title
+                    >h2 
+                
+                &__description
+                    >p 
+                
+
+            &__images 
+                >figure 
+            
+
+    
+    
+        &__galeria
+            width: 90% 
+            &__content
+                @include mainCenter
+                align-items: flex-start
+                &__items
+                    width: 45% 
+                    margin: .5em
+
+
+    
+    
+        &__wwu
+            width: 80%
+            &__title
+                padding-top: 1.5em
+                >h2 
+            &__subtitle
+                >h2 
+            
+            &__description
+
+            &__content
+                &__items 
+                    >figure 
+                        >img
+                    >figcaption
+            
+
+
+@include mediaMin(1024)
+    .nosotros 
+        &__acerca
+            width: 95%
+            @include mainCenter
+            // flex-wrap: nowrap
+            
+            &__content
+                width: 60%
+                padding: 1em
+                &__title
+                    padding: 0
+                    >h2 
+                &__description
+                    margin: .5em 0
+                
+            &__images
+                width: 35%
+                >figure 
+            
+
+
+
+        &__metodo
+            width: 95%
+            @include mainCenter
+            margin: 2em auto
+            &__content
+                width: 60%
+                order: 2
+                &__title
+                    padding: 0
+                    padding-bottom: 1em
+                    >h2 
+                
+                &__description
+                    >p 
+                
+
+            &__images 
+                width: 35%
+                order: 1
+                >figure 
+            
+
+    
+    
+        &__galeria
+            width: 90% 
+ 
+            &__content
+                &__items
+                    width: 30.33% 
+                    margin: .5em
+
+
+    
+    
+        &__wwu
+            width: 90%
+            margin-top: 2em
+            &__title
+                padding-top: 1.5em
+                >h2 
+            &__subtitle
+                width: 80%
+                margin: 0 auto
+                >h2 
+            
+            &__description
+                width: 80%
+                margin: 0 auto
+
+            &__content
+                width: 85%  
+                margin: 0 auto
+                &__items 
+                    width: 20%
+                    >figure 
+                        width: 80px
+                        min-height: 100px
+                        >img
+                    >figcaption
+                        line-height: 1.2
+            
+
+
+
+
+
+@include mediaMin(1200)
+    .nosotros 
+        &__acerca
+            margin-top: 3em
+        
+        &__acerca,
+        &__metodo,
+        &__galeria
+            width: 85%
+        
