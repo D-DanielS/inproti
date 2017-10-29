@@ -1,29 +1,50 @@
-function formModal(valor){
-	document.getElementById('modal').style.display=valor;
-	$(document).on('keydown',function(e){
-		if(e.which == 27){
-			document.getElementById('modal').style.display="none";
+(function (document, window, $) {
+	$(".docentes__items").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+	
+		autoplaySpeed: 15000,
+		autoplay: true,
+		responsive: [{
+
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 2,
+				infinite: true
+			}
+
+		}, {
+
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true
+			}
+
+		}, {
+
+			breakpoint: 400,
+			settings:{
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true
+			}, 
+		}, {
+			breakpoint: 200,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true
+			}
+
 		}
+	
+	
+	]
+		// mobileFirst: true,
+		// slidesToShow: 1,
+		// slidesToScroll: 1,
 	});
-}
-
-function claseDemo(valor){
-	document.getElementById('classdemo').style.display=valor;
-	$(document).on('keydown',function(e){
-		if(e.which == 27){
-			document.getElementById('classdemo').style.display="none";
-		}
-	});
-}
-
-function yfactorModal(valor){
-	document.getElementById('modalYF').style.display=valor;
-	$(document).on('keydown',function(e){
-		if(e.which == 27){
-			document.getElementById('modalYF').style.display="none";
-		}
-	});
-}
-
-
+})(document, window, jQuery);
 

@@ -205,92 +205,86 @@ $title__c: #182B34
 
 
 
+.docentes
+    overflow: hidden
+    &__title
+        padding: 2.2em 0
+     
+        @include mediaMin(1024)
+            padding: 3.2em 0
+        >h2 
+            text-align: center
+            font-family: $font-osw
+            letter-spacing: 1px
+            color: #182B34
+            font-size: responsive 28px 28px
+            // margin-bottom: 1em
 
 
+    &__items
 
 
+        &__tutor
+            padding: 2em 0
+            >figure 
+                width: 150px
+                height: 150px
+                margin: 0 auto
+                margin-bottom: 2em
+                background: #f4f4f4
+                border-radius: 50%
+                overflow: hidden
+                
+                
+                >img 
+                    width: 100%
+                    max-width: 100%
+            >figcaption 
+                text-align: center
+                font-family: $font-osw
+                letter-spacing: 1px
+                color: #182B34
+                font-size: responsive 22px 20px
+                text-transform: uppercase
+                font-weight: bold
 
 
+            >p 
+                text-align: center
+                font-family: $font-osw
+                font-weight: normal
+                color: #454545
+                text-transform: uppercase
+                font-size: responsive 15px 13px
+                margin-top: .5em
+                
+                &:last-child 
+                    color: #182B34
+                    padding-top: 1em
+                    text-transform: lowercase
+                    font-size: responsive 16px 17px
+                    line-height: 1.5
+                    font-family: $font-ops
+                    padding: 1em
 
-
-
-
-
-#modalindex
-    position: fixed
-    z-index:9999999 !important
-    top: 0%
-    left: 0
-    width: 100%
-    height: 100%
-    overflow: none !important
-    background: rgba($negro,.60)
-    @include mediaMax(1023)
-        display: none
-    @include mediaMin(1024)
-        display: block
-
-    #ventanaindex
-        // background-image: url('../images/modal-promo.jpg')
-        background-size: cover 
-        background-repeat: no-repeat
-        background-position: center center
-        width: 80%     
-        // height: 500px
-        // width: auto
-        // max-width: 100%
-        // height: 630px
-        // height: 
-        margin: 11% auto
-        // border: 5px solid $blanco_fa
-        // box-shadow: 0 0 40px rgba($negro,.6)
-        animation: animation 5s
-        position: relative
-        // @include mediaMin(1200)
-        //     max-width: 70%
-
-        figure
-            background: $blanco_fa
-            width: 850px
-            height: auto
-            margin: 0 auto
-            
-            box-shadow: 0 0 40px rgba($negro,.6)
-            
-            border: 5px solid $blanco_fa
-            
-            img 
-                width: 100%        
-                max-width: 100%
-
-
-        .cerrarindex
-            position: absolute
-            top: -10%
-            right: 0%
-            #cerrarindex
-                &:before
-                    content: "cerrar"
-                    color: $blanco
-                    padding-right: .5em
-                    text-transform: uppercase
-                    letter-spacing: 1px
-                >i 
-                    color: $blanco
-                    font-size: 2em
+                    
                     
 
 
+@include mediaMin(1024)
+    .docentes
+        &__items
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 90%
+            margin: 0 auto
+            &__tutor
+                margin: 1em
+                >p  
+                    &:last-child 
+                        width: 80%
+                        margin: 0 auto
+            
 
-.none
-    display: none 
 
-@keyframes animation
-
-    0%
-        top: -1000px
-    
-
-    30%
-        top: 0
-    
