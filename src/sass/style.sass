@@ -19,10 +19,9 @@ $title__c: #182B34
 
 @import "import/headers"
 
-@import "import/formModal"
 
 
-@import "import/contactus"
+
 
 
 
@@ -30,9 +29,7 @@ $title__c: #182B34
 
 @import "media/media-nav"
 @import "media/media-home"
-@import "media/media-formModal"
 
-@import "media/media-contactus"
 
 
 
@@ -111,12 +108,15 @@ $title__c: #182B34
         
 
 
-@include mediaMin(767)
+@include mediaMin(1024)
     .mision
-        &__container
-            width: 80%
+        &__container   
+            padding: 3em 0
+            width: 85%
             margin: 0 auto
         &__items
+            &__mision
+                padding-bottom: 2em
             &:first-child
                 >figure 
                     width: 80%
@@ -138,7 +138,7 @@ $title__c: #182B34
         height: 100%
         top: 0
         position: absolute
-        background: rgba($negro,.65)
+        background: rgba($negro,.55)
         
 
 
@@ -171,7 +171,7 @@ $title__c: #182B34
                 box-shadow: 1px 4px 10px rgba($negro, .8)
                 overflow: hidden
                 border-radius: 50%
-                border: 5px solid #eeeeee
+                border: 5px solid #dcdcdc
                 background: #f3f3f3
                 >img                
                     width: 100%
@@ -190,11 +190,11 @@ $title__c: #182B34
 
 @include mediaMin(1024)
     .semilleros
-        height: 500px
+        height: 550px
         background-attachment: fixed
         &__title
             >h2
-                padding-top: 2em
+                padding-top: 3em
         &__contenedor
             margin-top: 2em
             .semilleros__items
@@ -206,29 +206,29 @@ $title__c: #182B34
 
 
 .docentes
+    background: #f4f4f4
     overflow: hidden
     &__title
         padding: 2.2em 0
      
         @include mediaMin(1024)
-            padding: 3.2em 0
+            padding: 1.6em 0
         >h2 
             text-align: center
             font-family: $font-osw
             letter-spacing: 1px
             color: #182B34
             font-size: responsive 28px 28px
-            // margin-bottom: 1em
+            padding-top: 3em
 
 
     &__items
 
-
         &__tutor
             padding: 2em 0
             >figure 
-                width: 150px
-                height: 150px
+                width: 170px
+                height: 170px
                 margin: 0 auto
                 margin-bottom: 2em
                 background: #f4f4f4
@@ -261,8 +261,8 @@ $title__c: #182B34
                 &:last-child 
                     color: #182B34
                     padding-top: 1em
-                    text-transform: lowercase
-                    font-size: responsive 16px 17px
+                    text-transform: inherit
+                    font-size: responsive 15px 15px
                     line-height: 1.5
                     font-family: $font-ops
                     padding: 1em
@@ -281,10 +281,14 @@ $title__c: #182B34
             margin: 0 auto
             &__tutor
                 margin: 1em
+                >figure 
+                    border: 7px solid #fff
+                    box-shadow: 0 5px 20px rgba($negro,.3)
                 >p  
                     &:last-child 
-                        width: 80%
+                        width: 95%
                         margin: 0 auto
-            
+                        text-align: left
+                                    
 
 

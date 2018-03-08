@@ -1,5 +1,4 @@
 footer 
-    // background: #292929
     background: #24292f
     @include url-images(bglogo, png)
     background-size: cover !important
@@ -8,11 +7,10 @@ footer
     
 
 .footer
-    // border: 1px solid red
     &__img
         text-align: center
         @include mediaMax(768)
-            padding-top: 3em
+            padding-top: 2em
         >figure 
             width: 200px
             text-align: center
@@ -24,68 +22,69 @@ footer
         width: 90% 
         margin: 0 auto
         padding: 2em 0
-        >h2 
-            // color: $blanco
-            color: #ea4a33
-            text-transform: uppercase
+        // >h2 
+        //     // color: $blanco
+        //     color: #ea4a33
+        //     text-transform: uppercase
         >p 
             color: $blanco
             text-align: left
-            font-size: responsive 17px 17px
+            font-size: responsive 15px 16px
+            line-height: 1.5
             font-family: $font-osw
             font-weight: 300
             letter-spacing: 1px
     
-    &__contenedor
-        display: flex
-        align-items: center
-        justify-content: center
-        width: 90%
-        margin: 0 auto
-        .footer__link
-            width: 45%
-            >ul 
-                >li 
-                    list-style: none
-                    >a 
-                        color: $blanco
-                        text-transform: capitalize
-                        line-height: 2
-                        font-size: responsive 15px 17px
-                        font-family: $font-osw
-                        font-weight: 300
-                        letter-spacing: 1px
+    // &__contenedor
+    //     display: flex
+    //     align-items: center
+    //     justify-content: center
+    //     width: 90%
+    //     margin: 0 auto
+        // .footer__link
+        //     width: 45%
+        //     >ul 
+        //         >li 
+        //             list-style: none
+        //             >a 
+        //                 color: $blanco
+        //                 text-transform: capitalize
+        //                 line-height: 2
+        //                 font-size: responsive 15px 15px
+        //                 font-family: $font-osw
+        //                 font-weight: 300
+        //                 letter-spacing: 1px
              
 
 
-        .footer__socialmedia
-            width: 45%
+        // .footer__socialmedia
+        //     width: 45%
             
-            &__items
+        //     &__items
 
 
-                @include mainCenter
-                justify-content: flex-start
-                text-decoration: none
+        //         @include mainCenter
+        //         justify-content: flex-start
+        //         text-decoration: none
   
-                >i 
-                    line-height: 2
-                    color: $blanco
+        //         >i 
+        //             line-height: 2
+        //             color: $blanco
 
                 
-                .fa-facebook,
-                .fa-instagram,
-                .fa-youtube-play
-                    font-size: 1.1em
+        //         .fa-facebook,
+        //         .fa-instagram,
+        //         .fa-youtube-play
+        //             font-size: 1.1em
                 
-                >p 
-                    color: $blanco
-                    text-transform: capitalize
-                    padding-left: .5em
-                    font-size: responsive 15px 17px
-                    font-family: $font-osw
-                    font-weight: 300
-                    letter-spacing: 1px
+        //         >p 
+        //             color: $blanco
+        //             text-transform: capitalize
+        //             padding-left: .5em
+        //             font-size: responsive 15px 17px
+        //             font-family: $font-osw
+        //             font-weight: 300
+        //             letter-spacing: 1px
 
 
     &__derechos
@@ -106,12 +105,3 @@ footer
             font-weight: 300
             letter-spacing: 1px
 
-
-.meps
-    text-decoration: none !important
-    color: #ffffff
-    &:hover
-        color: #E92C68
-        text-decoration: underline !important
-
-    

@@ -43,7 +43,7 @@ html(lang="es")
         meta(name='theme-color', content='#ffffff')
 
 
-    body
+    body#inicio
         nav
             include ./includes/nav/nav.pug
             +nav('inicio')
@@ -54,16 +54,17 @@ html(lang="es")
         section 
             include ./includes/franja/franja.pug
 
-        section.bgmv
+        section.bgmv#nosotros
             include ./includes/mision/mision.pug
+        
 
-        section
+        section#objetivos
             include ./includes/home/caracteristicas.pug
 
-        section.semilleros
+        section.semilleros#semilleros
             include ./includes/semilleros/semilleros.pug
 
-        section.docentes
+        section.docentes#docentes
             include ./includes/docentes/docentes.pug
         
         footer
@@ -77,35 +78,13 @@ html(lang="es")
         
         script(type='text/javascript', src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
 
-
-
         script(type='text/javascript', src='//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js')
         script(src="./js/slick.min.js")
 
         script(src="./js/nav.js")
         script(src="./js/scripts.js")
-        //- script. 
-            /*slide header */
-            var i = 0;
-            if( $(window).width() >= 1024){
-            setInterval(function(){
-            if(i === 0){
-            $("#imgHeader").attr("src","./images/sliderp/promo.jpg");
-            i = 1;
-            }else if(i === 1) {
-            $("#imgHeader").attr("src","./images/sliderp/banner_servicios.jpg");
-            i = 2;
-            }else if(i === 2){
-            $("#imgHeader").attr("src","./images/sliderp/banner_onlinelesssos-1.jpg");
-            i = 3;
-            }else if(i === 3){
-            $("#imgHeader").attr("src","./images/sliderp/frances.jpg");
-            i = 4;
-            }else if(i === 4){
-            $("#imgHeader").attr("src","./images/sliderp/vl.jpg");
-            i = 0;
-            }
-            }, 5000);
-            }
+        script(src="./js/scrollflow.js")
+        script(src="./js/scroll.js")
+        
 
 

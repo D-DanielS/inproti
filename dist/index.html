@@ -27,23 +27,23 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
     <meta name="theme-color" content="#ffffff"/>
   </head>
-  <body>
+  <body id="inicio">
     <nav>
             <div class="nav">
               <div class="nav__movil"><a href="index.html">
                   <figure><img src="./images/logos.png" alt="image"/></figure></a><i class="fa fa-bars fa-2x iconMenu" id="iconMenu"></i></div>
               <ul class="nav__web" id="menu">
-                <li class="nav__web__items"><a class="nav__web__items__link select-active" href="#">inicio</a></li>
-                <li class="nav__web__items"><a class="nav__web__items__link" href="#">Nosotros</a></li>
-                <li class="nav__web__items"><a class="nav__web__items__link" href="#">Objetivos</a></li>
-                <li class="nav__web__items"><a class="nav__web__items__link" href="#">Semilleros</a></li>
-                <li class="nav__web__items"><a class="nav__web__items__link" href="#">Docentes</a></li>
+                <li class="nav__web__items"><a class="nav__web__items__link select-active scroll" href="#inicio">Inicio</a></li>
+                <li class="nav__web__items"><a class="nav__web__items__link scroll" href="#nosotros">Nosotros</a></li>
+                <li class="nav__web__items"><a class="nav__web__items__link scroll" href="#objetivos">Objetivos</a></li>
+                <li class="nav__web__items"><a class="nav__web__items__link scroll" href="#semilleros">Semilleros</a></li>
+                <li class="nav__web__items"><a class="nav__web__items__link scroll" href="#docentes">Docentes</a></li>
               </ul>
             </div>
     </nav>
     <header> 
       <div class="header__contenedor">
-        <figure><img src="https://lorempixel.com/1600/500" alt="image" id="imgHeader"/></figure>
+        <figure><img src="../../../images/inprotibg.png" alt="image" id="imgHeader"/></figure>
       </div>
     </header>
     <section> 
@@ -51,10 +51,10 @@
         <h2>Innovando y Desarrollando Proyectos con Tecnologías de la Información.</h2>
       </div>
     </section>
-    <section class="bgmv">
+    <section class="bgmv" id="nosotros">
       <div class="mision__container">
         <div class="mision__items">
-          <figure><img src="./images/logoletra.png" alt="logo"/></figure>
+          <figure><img src="./images/mv.png" alt="logo"/></figure>
         </div>
         <div class="mision__items">
           <div class="mision__items__mision">
@@ -68,7 +68,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="objetivos">
       <div class="caracteristicas__title">
         <h2>Objetivo General</h2>
         <p>Desarrollar proyectos con el uso tecnologías de la información, para el departamento del Huila y sus apuestas productivas.</p>
@@ -102,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section class="semilleros">
+    <section class="semilleros" id="semilleros">
       <div class="semilleros__title">
         <h2>Semilleros de Investigación</h2>
       </div>
@@ -112,7 +112,7 @@
           <figcaption>Sociedad NTIC</figcaption>
         </div>
         <div class="semilleros__items">
-          <figure><img src="./images/ntic.png"/></figure>
+          <figure><img src="./images/evolsystem.png"/></figure>
           <figcaption>EvolSystem</figcaption>
         </div>
         <div class="semilleros__items">
@@ -120,39 +120,39 @@
           <figcaption>Mamba</figcaption>
         </div>
         <div class="semilleros__items">
-          <figure><img src="./images/mamba.png"/></figure>
+          <figure><img src="./images/elogic.png"/></figure>
           <figcaption>E-Logic</figcaption>
         </div>
       </div>
     </section>
-    <section class="docentes">
+    <section class="docentes" id="docentes">
       <div class="docentes__title">
         <h2>Docentes Tutores</h2>
       </div>
       <div class="docentes__items">
         <div class="docentes__items__tutor">
-          <figure><img src="http://lorempixel.com/200/200" alt=""/></figure>
-          <figcaption>Edisney Garcia Perdomo</figcaption>
-          <p>tutora Sociedad NTIC</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit? Asperiores, nisi? Eum, rem, expedita recusandae rerum quo maxime facere accusantium nisi quas quia consequatur quisquam, voluptas fugiat natus sequi.</p>
-        </div>
-        <div class="docentes__items__tutor">
-          <figure><img src="http://lorempixel.com/200/200" alt=""/></figure>
-          <figcaption>Alvaro Hernan Alarcón Lopez</figcaption>
-          <p>tutor E-Logic</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit? Asperiores, nisi? Eum, rem, expedita recusandae rerum quo maxime facere accusantium nisi quas quia consequatur quisquam, voluptas fugiat natus sequi.</p>
-        </div>
-        <div class="docentes__items__tutor">
-          <figure><img src="http://lorempixel.com/200/200" alt=""/></figure>
+          <figure><img src="../../../images/llanos.png" alt=""/></figure>
           <figcaption>Jose Miguel Llanos Mosquera</figcaption>
-          <p>Tutor Mamba</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit? Asperiores, nisi? Eum, rem, expedita recusandae rerum quo maxime facere accusantium nisi quas quia consequatur quisquam, voluptas fugiat natus sequi.</p>
+          <p class="tutor">Tutor Mamba</p>
+          <p>Ingeniero de Sistemas, Especialista en Arquitectura de Software, Magíster en Arquitectura de Software; líder del grupo de investigación: Innovación, Investigación y Desarrollo de Proyectos de Tecnologías de la Información - INPROTI del programa de Ingeniería de Sistemas.</p>
         </div>
         <div class="docentes__items__tutor">
-          <figure><img src="http://lorempixel.com/200/200" alt=""/></figure>
+          <figure><img src="../../../images/edisney.png" alt=""/></figure>
+          <figcaption>Edisney Garcia Perdomo</figcaption>
+          <p class="tutor">tutora Sociedad NTIC</p>
+          <p>Ingeniera de Sistemas, Magíster en Gestión de la Tecnología Educativa de la Universidad Santander, Especialista en Administración de la Informática Educativa, Especialista en Alta Gerencia de la Universidad Surcolombiana, Especialista Formador(a) Pedagógico(a) Especializada en FP con Base en Competencias Laborales del Servicio Nacional  de Aprendizaje, SENA.</p>
+        </div>
+        <div class="docentes__items__tutor">
+          <figure><img src="../../../images/alvaro.png" alt=""/></figure>
+          <figcaption>Alvaro Hernan Alarcón Lopez</figcaption>
+          <p class="tutor">tutor E-Logic</p>
+          <p>Ingeniero Electrónico de la Universidad Surcolombiana, Especialista en Administración de la Informática Educativa de la Universidad de Santander, Magíster en Gestión de la Tecnología Educativa de la Universidad de Santander; con destreza para el trabajo en equipo, manejo de personal y liderazgo, experiencia docente en el área de Electrónica Automotriz en la educación media técnica y Redes de Datos en la educación superior.</p>
+        </div>
+        <div class="docentes__items__tutor">
+          <figure><img src="../../../images/ivan.png" alt=""/></figure>
           <figcaption>Ivan Alarcón ávila</figcaption>
-          <p>tutor Evolsystem</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, fugit? Asperiores, nisi? Eum, rem, expedita recusandae rerum quo maxime facere accusantium nisi quas quia consequatur quisquam, voluptas fugiat natus sequi.</p>
+          <p class="tutor">tutor Evolsystem</p>
+          <p>Ingeniero de Sistemas, Especialista en Gerencia Social, Administración de Empresas, Administración de la Informática Educativa y Magíster en Gestión de la Tecnología Educativa. Con amplia trayectoria laboral general y específica, de enfoque administrativo laboral y sinérgico. Con experiencia en implantación de sistemas de información y experiencia acreditada en consultoría e interventoría a contratos con empresas privadas y estatales.</p>
         </div>
       </div>
     </section>
@@ -169,7 +169,7 @@
         </div>
       </div>
       <div class="footer__derechos"> 
-        <p>Copytight &copy; 2017 Improti - Diseñado Juan Lizcano</p>
+        <p>Copytight &copy; 2017 Inproti - Diseñado Juan Lizcano</p>
       </div>
     </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -178,5 +178,7 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/scripts.js"></script>
+    <script src="./js/scrollflow.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

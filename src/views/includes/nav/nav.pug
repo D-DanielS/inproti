@@ -11,41 +11,41 @@ mixin nav(active)
         ul.nav__web#menu
             if(active === 'inicio')
                 li.nav__web__items
-                    a.nav__web__items__link.select-active(href="#") inicio
+                    a.nav__web__items__link.select-active(href="#inicio").scroll Inicio
             else 
                 li.nav__web__items
-                    a.nav__web__items__link(href="#") inicio
+                    a.nav__web__items__link(href="index.html").scroll Inicio
 
 
             if(active === 'cursos')
                 li.nav__web__items
-                    a.nav__web__items__link.select-active(href="#") Nosotros
+                    a.nav__web__items__link.select-active(href="#nosotros").scroll Nosotros
             else 
                 li.nav__web__items
-                    a.nav__web__items__link(href="#") Nosotros
+                    a.nav__web__items__link(href="#nosotros").scroll Nosotros
 
 
             if(active === 'servicios')
                 li.nav__web__items
-                    a.nav__web__items__link.select-active(href="#") Objetivos
+                    a.nav__web__items__link.select-active(href="#objetivos").scroll Objetivos
             else
                 li.nav__web__items
-                    a.nav__web__items__link(href="#") Objetivos
+                    a.nav__web__items__link(href="#objetivos").scroll Objetivos
             
             if(active === 'placement')
                 li.nav__web__items
-                    a.nav__web__items__link.select-active(href="#") Semilleros
+                    a.nav__web__items__link.select-active(href="#semilleros").scroll Semilleros
             else
                 li.nav__web__items
-                    a.nav__web__items__link(href="#") Semilleros
+                    a.nav__web__items__link(href="#semilleros").scroll Semilleros
 
 
             if(active === 'the-yes-factor')
                 li.nav__web__items
-                    a.nav__web__items__link.select-active(href="#") Docentes
+                    a.nav__web__items__link.select-active(href="#docentes").scroll Docentes
             else
                 li.nav__web__items
-                    a.nav__web__items__link(href="#") Docentes
+                    a.nav__web__items__link(href="#docentes").scroll Docentes
             
 
 
@@ -53,37 +53,3 @@ mixin nav(active)
                        
 
 
-
-mixin menu()
-
-    .nav
-        .nav__movil
-            a(href="index.html")
-                figure
-                    img(src="./images/avatar.png", alt="image")
-            i.fa.fa-bars.fa-2x#iconMenu.iconMenu
- 
- 
-
-        ul.nav__web#menu
-            li.nav__web__items
-                a.nav__web__items__link(href="#") inicio
-            
-            li.nav__web__items
-                a.nav__web__items__link(href="#") participantes
-            
-            li.nav__web__items
-                a.nav__web__items__link(href="#") como funciona
-            
-            li.nav__web__items
-                a.nav__web__items__link(href="#") invitados
-
-            
-            li.nav__web__items
-                a.nav__web__items__link(href="#") inscripciones
-            
-            //- li.nav__web__items
-            //-     a.nav__web__items__link(href="contacto.html") contáctenos
-            
-
-            
